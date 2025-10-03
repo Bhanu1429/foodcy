@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodcy</title>
+
+    <!-- Tailwind CDN - quick start for dev/demo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Optional: configure Tailwind via the CDN before it loads (custom colors) -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: '#f8fafc',
+                100: '#f1f5f9',
+                500: '#0ea5a4', /* teal-ish */
+              }
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
